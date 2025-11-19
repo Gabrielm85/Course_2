@@ -38,11 +38,13 @@ createGrid();
 let pacmanCurrentIndex = 28 * 10 + 1;
 
 function setPacmanPosition() {
-  const row = Math.floor(pacmanCurrentIndex / width);
-  const col = pacmanCurrentIndex % width;
-  pacman.style.top = (row * 21) + 'px';
-  pacman.style.left = (col * 21) + 'px';
+  const row = Math.floor(pacmanCurrentIndex / width);
+  const col = pacmanCurrentIndex % width;
+  const gap = 1; // si tu grid tiene gap: 1px
+  pacman.style.top = (row * (20 + gap)) + 'px';
+  pacman.style.left = (col * (20 + gap)) + 'px';
 }
+
 
 setPacmanPosition();
 

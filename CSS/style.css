@@ -9,7 +9,7 @@ margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(28, 20px);
   grid-template-rows: repeat(31, 20px);
-  gap: 0; /* reducir gap o poner 0 */
+  gap: 1px; /* coincide con la variable gap en JS */
   position: relative;
 }
 

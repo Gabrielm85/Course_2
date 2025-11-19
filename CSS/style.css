@@ -1,0 +1,87 @@
+body {
+background-color: black;
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(28, 20px);
+  grid-template-rows: repeat(31, 20px);
+  gap: 1px;
+  position: relative;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.wall {
+  background-color: blue;
+}
+
+.dot {
+  background-color: black;
+  position: relative;
+}
+
+.dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.power-pellet::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pacman {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  transition: top 0.2s, left 0.2s;
+  z-index: 2;
+}
+
+.ghost {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.red {
+  background-color: red;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.blue {
+  background-color: cyan;
+}
+
+.orange {
+  background-color: orange;
+}

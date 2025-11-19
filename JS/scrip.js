@@ -109,3 +109,17 @@ function moveGhost(ghost) {
 }
 
 createGhosts();
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <title>OleoPacman</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <div class="grid" id="grid"></div>
+  <div id="pacman"></div>
+
+  <script src="JS/scrip.js"></script>
+</body>
